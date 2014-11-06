@@ -67,7 +67,7 @@
                     <connectors>
                         <connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">
                             <!--定义jetty运行的端口-->
-                            <port>9090</port>
+                            <port>9898</port>
                         </connector>
                     </connectors>
                 </configuration>
