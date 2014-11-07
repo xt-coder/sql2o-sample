@@ -7,6 +7,16 @@
     <groupId>com.xiaohao</groupId>
     <artifactId>sql2o-sample</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
+
+
+    <developers>
+        <developer>
+            <name>superhao</name>
+            <email>285764190@qq.com</email>
+            <url>http://www.baidu.com</url>
+        </developer>
+    </developers>
 
 
     <dependencies>
@@ -53,7 +63,18 @@
             <version>1.4</version>
         </dependency>
     </dependencies>
-
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <name>Internal Releases</name>
+            <url>http://192.168.1.254:8081/nexus/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>Nexus Snapshot Repository</name>
+            <url>http://192.168.1.254:8081/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
     <build>
         <plugins>
             <plugin>
